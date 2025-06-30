@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AtCoder Checklist</title>
+  <meta charset="UTF-8" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    /* Reset margin cho body để background phủ toàn màn hình */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5; /* Fallback color */
+      
+      /* --- BACKGROUND CHO BODY (CHỌN MỘT TRONG CÁC CÁCH DƯỚI) --- */
+      /* Cách 1: Hình ảnh nền (thay đổi đường dẫn ảnh của bạn) */
+      background-image: url('https://cdn.pixabay.com/photo/2016/11/29/05/45/abstract-1867623_1280.jpg'); /* Ví dụ ảnh abstract */
+      background-size: cover; /* Đảm bảo ảnh phủ kín */
+      background-repeat: no-repeat;
+      background-attachment: fixed; /* Giữ cố định ảnh khi cuộn */
+
+      /* Cách 2: Gradient nền (bỏ ghi chú nếu muốn dùng) */
+      /* background-image: linear-gradient(to right bottom, #4CAF50, #2196F3); */
+      /* background-size: cover; */
+      /* background-repeat: no-repeat; */
+      /* background-attachment: fixed; */
+    }
+
+    /* Lớp tạo hiệu ứng blur cho background */
+    .background-blur {
+        position: fixed; /* Đặt cố định */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* Kế thừa background từ body */
+        background-image: inherit; 
+        background-size: inherit;
+        background-repeat: inherit;
+        background-attachment: inherit;
+        filter: blur(5px); /* Điều chỉnh độ blur tại đây (ví dụ 5px) */
+        z-index: -1; /* Đặt phía sau nội dung chính */
+    }
+
+    /* Wrapper cho nội dung chính để tạo hiệu ứng lớp mờ nổi bật */
+    .content-wrapper {
+        background-color: rgba(255, 255, 255, 0.8); /* Nền trắng với độ trong suốt 80% */
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ */
+        width: 90%; /* Chiếm 90% chiều rộng body */
+        max-width: 960px; /* Giới hạn chiều rộng tối đa */
+        margin: 20px auto; /* Căn giữa và tạo khoảng cách trên dưới */
+        position: relative; /* Đảm bảo nằm trên lớp blur */
+        z-index: 1; /* Đặt phía trên lớp background-blur */
+        box-sizing: border-box; /* Bao gồm padding và border trong width/height */
+    }
+
+
+    h1 {
+      font-size: 28px;
+      color: #2c3e50;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid #3498db;
+      text-align: center;
+    }
+
+    /* Styles for the new tabbed interface */
+    .tab-container {
+      display: flex; /* Arrange buttons horizontally */
+      margin-bottom: 20px;
+      background-color: rgba(224, 224, 224, 0.85); /* Thêm độ trong suốt */
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+    }
+
+    .tab-button {
+      flex-grow: 1; /* Distribute space evenly */
+      padding: 12px 20px;
+      border: none;
+      background-color: #cccccc; /* Inactive tab background */
+      color: #444; /* Inactive tab text color */
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+      outline: none; /* Remove outline on focus */
+      text-align: center;
+    }
+
+    .tab-button:hover:not(.active) {
+      background-color: #bbbbbb; /* Slightly darker on hover for inactive tabs */
+    }
+
+    .tab-button.active {
+      background-color: #3498db; /* Active tab background (blue) */
+      color: #ffffff; /* Active tab text color (white) */
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2); /* Inner shadow for active tab */
+    }
+
+    /* Optional: Add a subtle border or separator between tabs if desired */
+    .tab-button + .tab-button {
+        border-left: 1px solid rgba(255, 255, 255, 0.3); /* Subtle separator for active tabs */
+    }
+    .tab-button:not(.active) + .tab-button:not(.active) {
+        border-left: 1px solid #b0b0b0; /* Darker separator for inactive tabs */
+    }
+
+
+    /* Existing problem list styles */
+    #problem-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 20px; /* Adjust margin if needed after tab bar */
+      background-color: rgba(255, 255, 255, 0.7); /* Thêm độ trong suốt */
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+    }
+
+    #problem-list li {
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      border-bottom: 1px solid #ecf0f1;
+      gap: 15px; /* Khoảng cách giữa các cột */
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    #problem-list li:last-child {
+      border-bottom: none;
+    }
+
+    #problem-list li:hover {
+      background-color: #f8f9fa;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Style cho cột số thứ tự */
+    .problem-number-column {
+        width: 30px; /* Chiều rộng cố định cho cột số thứ tự */
+        flex-shrink: 0; /* Ngăn không cho cột này co lại */
+        font-weight: bold;
+        color: #555;
+        text-align: right; /* Căn phải số thứ tự */
+    }
+
+    /* Style cho dropdown trạng thái */
+    .problem-status-select {
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        background-color: #f9f9f9;
+        cursor: pointer;
+        outline: none;
+        flex-shrink: 0; /* Ngăn không cho nó co lại */
+
+        /* --- CẬP NHẬT ĐỂ XOÁ MŨI TÊN --- */
+        -webkit-appearance: none; /* For Chrome, Safari, Opera */
+        -moz-appearance: none;    /* For Firefox */
+        appearance: none;         /* Standard property */
+        background-image: none;   /* Loại bỏ hình nền mũi tên mặc định */
+        padding-right: 12px;      /* Điều chỉnh padding nếu cần */
+        /* --- KẾT THÚC CẬP NHẬT --- */
+    }
+
+    .problem-status-select:focus {
+        border-color: #3498db;
+        box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+    }
+
+    .problem-info {
+      display: flex;
+      flex-grow: 1;
+      justify-content: space-between; /* Giãn cách các thành phần con */
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    /* Styles cho icon trạng thái */
+    .problem-status-icon {
+        margin-right: 8px; /* Khoảng cách với text */
+        font-size: 1.2em; /* Kích thước icon */
+        vertical-align: middle; /* Căn chỉnh với text */
+        width: 20px; /* Đảm bảo độ rộng cố định để căn chỉnh tốt */
+        text-align: center;
+        flex-shrink: 0; /* Ngăn icon bị co lại */
+    }
+
+    .problem-title {
+      font-size: 17px;
+      font-weight: 500;
+      color: #34495e;
+      text-decoration: none;
+    }
+
+    .problem-title:hover {
+      text-decoration: underline;
+      color: #2980b9;
+    }
+
+    .problem-difficulty {
+      font-size: 14px;
+      color: #7f8c8d;
+      font-weight: 400;
+      margin-left: 10px;
+      flex-shrink: 0;
+    }
+
+    /* Các lớp trạng thái cho thẻ li */
+    li.status-ac {
+        background-color: rgba(144, 238, 144, 0.5); /* LightGreen với độ trong suốt */
+    }
+    li.status-ac .problem-title {
+        text-decoration: line-through;
+        color: #28a745; /* Màu xanh lá đậm hơn */
+    }
+    li.status-ac .problem-status-icon { color: #28a745; }
+
+    li.status-wa {
+        background-color: rgba(255, 99, 71, 0.5); /* Tomato với độ trong suốt */
+    }
+    li.status-wa .problem-title {
+        color: #dc3545; /* Màu đỏ */
+    }
+    li.status-wa .problem-status-icon { color: #dc3545; }
+
+    li.status-tle {
+        background-color: rgba(255, 215, 0, 0.5); /* Gold với độ trong suốt */
+    }
+    li.status-tle .problem-title {
+        color: #ffc107; /* Màu vàng cam */
+    }
+    li.status-tle .problem-status-icon { color: #ffc107; }
+
+    li.status-mle {
+        background-color: rgba(173, 216, 230, 0.5); /* LightBlue với độ trong suốt */
+    }
+    li.status-mle .problem-title {
+        color: #007bff; /* Màu xanh dương */
+    }
+    li.status-mle .problem-status-icon { color: #007bff; }
+
+    li.status-re {
+        background-color: rgba(255, 160, 122, 0.5); /* LightSalmon với độ trong suốt */
+    }
+    li.status-re .problem-title {
+        color: #fd7e14; /* Màu cam đậm */
+    }
+    li.status-re .problem-status-icon { color: #fd7e14; }
+
+    li.status-ce {
+        background-color: rgba(192, 192, 192, 0.5); /* Silver với độ trong suốt */
+    }
+    li.status-ce .problem-title {
+        color: #6c757d; /* Màu xám */
+    }
+    li.status-ce .problem-status-icon { color: #6c757d; }
+
+    li.status-other {
+        background-color: rgba(220, 220, 220, 0.5); /* Gainsboro với độ trong suốt */
+    }
+    li.status-other .problem-title {
+        color: #343a40; /* Màu đen xám */
+    }
+    li.status-other .problem-status-icon { color: #343a40; }
+
+    li.status-unsolved { /* Mặc định */
+        background-color: transparent; /* Không màu nền */
+    }
+    li.status-unsolved .problem-title {
+        color: #34495e; /* Màu mặc định */
+        text-decoration: none;
+    }
+    li.status-unsolved .problem-status-icon { color: #6c757d; } /* Màu xám cho icon */
+
+
+    /* Style cho biểu đồ tròn */
+    #solvedPieChart {
+        background-color: rgba(255, 255, 255, 0.7); /* Thêm background trong suốt cho canvas */
+        border-radius: 8px;
+        padding: 10px;
+        margin: 20px auto;
+        display: block; /* Để căn giữa block element */
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+    }
+  </style>
+</head>
+<body>
+  <div class="background-blur"></div>
+
+  <div class="content-wrapper">
+    <h1>➡️ AtCoder Checklist</h1>
+
+    <div class="tab-container">
+      <button class="tab-button active" data-difficulty="Easy">Easy</button>
+      <button class="tab-button" data-difficulty="Medium">Medium</button>
+      <button class="tab-button" data-difficulty="Hard">Hard</button>
+    </div>
+
+    <div style="width: 300px; margin: 20px auto;">
+      <canvas id="solvedPieChart"></canvas>
+    </div>
+
+    <ul id="problem-list"></ul>
+  </div>
+
+  <script>
+    // Khai báo biến toàn cục để lưu instance của Chart, giúp cập nhật biểu đồ sau này
+    let myPieChart;
+
+    // Hàm trả về ký tự Unicode cho từng trạng thái
+    function getIconForStatus(status) {
+        switch (status) {
+            case 'AC': return '&#x2705;'; // ✅ White Heavy Check Mark
+            case 'WA': return '&#x274C;'; // ❌ Cross Mark
+            case 'TLE': return '&#x23F1;'; // ⏱️ Stopwatch
+            case 'MLE': return '&#x1F4BE;'; // 💾 Floppy Disk
+            case 'RE': return '&#x26A0;'; // ⚠️ Warning Sign
+            case 'CE': return '&#x1F4BB;'; // 💻 Personal Computer
+            case 'Other': return '&#x2753;'; // ❓ Question Mark
+            case 'Unsolved': return '&#x25CB;'; // ⚪ White Circle
+            default: return '';
+        }
+    }
+
+    async function loadProblems() {
+      let problems = [];
+
+      try {
+        const [easyData, mediumData, hardData] = await Promise.all([
+          fetch('problemlist_easy.json')
+            .then(r => r.ok ? r.json() : [])
+            .catch(error => {
+                console.warn("Cảnh báo: Không thể tải problemlist_easy.json. Vui lòng kiểm tra file.", error);
+                return [];
+            }),
+          fetch('problemlist_medium.json')
+            .then(r => r.ok ? r.json() : [])
+            .catch(error => {
+                console.warn("Cảnh báo: Không thể tải problemlist_medium.json. Vui lòng kiểm tra file.", error);
+                return [];
+            }),
+          fetch('problemlist_hard.json')
+            .then(r => r.ok ? r.json() : [])
+            .catch(error => {
+                console.warn("Cảnh báo: Không thể tải problemlist_hard.json. File có thể bị thiếu hoặc có lỗi.", error);
+                return [];
+            })
+        ]);
+
+        let allRawProblems = [];
+
+        // Xử lý các bài toán Easy (sử dụng trường 'title')
+        easyData.forEach(p => {
+            allRawProblems.push({
+                title: p.title,
+                url: p.url,
+                difficulty: p.difficulty
+            });
+        });
+
+        // Xử lý các bài toán Medium (sử dụng trường 'name')
+        mediumData.forEach(p => {
+            allRawProblems.push({
+                title: p.name, // Sử dụng 'name' từ medium.json
+                url: p.url,
+                difficulty: p.difficulty
+            });
+        });
+
+        // Xử lý các bài toán Hard (sử dụng trường 'name')
+        hardData.forEach(p => {
+            allRawProblems.push({
+                title: p.name || p.title || `Problem ${allRawProblems.length + 1}`, // Sử dụng 'name' hoặc 'title' từ hard.json
+                url: p.url,
+                difficulty: p.difficulty
+            });
+        });
+
+        // Gán ID duy nhất cho mỗi bài toán trong danh sách tổng hợp
+        problems = allRawProblems.map((p, index) => ({
+            ...p,
+            id: index + 1
+        }));
+
+      } catch (error) {
+        console.error("Lỗi nghiêm trọng khi tải các bài toán:", error);
+        document.getElementById('problem-list').innerHTML =
+          '<li>Lỗi khi tải bài toán. Vui lòng đảm bảo các file JSON (ví dụ: `problemlist_easy.json`, `problemlist_medium.json`, `problemlist_hard.json`) nằm cùng thư mục và bạn đang chạy một máy chủ web cục bộ (ví dụ: Live Server trong VS Code hoặc `python -m http.server`).</li>';
+        return;
+      }
+
+      const list = document.getElementById('problem-list');
+      const tabButtons = document.querySelectorAll('.tab-button'); // Lấy tất cả các nút tab
+      // --- Đã thay đổi mặc định từ 'All' sang 'Easy' ---
+      let currentFilterDifficulty = 'Easy'; 
+
+      // Thêm sự kiện click cho mỗi nút tab
+      tabButtons.forEach(button => {
+          button.addEventListener('click', () => {
+              // Xóa lớp 'active' khỏi tất cả các nút
+              tabButtons.forEach(btn => btn.classList.remove('active'));
+              // Thêm lớp 'active' vào nút vừa được click
+              button.classList.add('active');
+              // Cập nhật giá trị lọc hiện tại
+              currentFilterDifficulty = button.dataset.difficulty;
+              // Gọi hàm render để cập nhật danh sách
+              render();
+              // Cập nhật thống kê/biểu đồ khi lọc thay đổi
+              updateStats();
+          });
+      });
+
+      function render() {
+        list.innerHTML = '';
+        const selectedDifficulty = currentFilterDifficulty; // Sử dụng giá trị từ tab được chọn
+
+        // Lọc bài toán trước khi hiển thị để có số thứ tự đúng cho filtered problems
+        const filteredProblems = problems.filter(p => {
+            // --- Logic lọc vẫn giữ nguyên, nhưng 'All' không còn là lựa chọn ---
+            return p.difficulty.toLowerCase() === selectedDifficulty.toLowerCase();
+        });
+
+
+        filteredProblems.forEach((p, index) => { // Dùng filteredProblems để render
+          const li = document.createElement('li');
+          
+          // --- THÊM CỘT SỐ THỨ TỰ RIÊNG BIỆT ---
+          const problemNumberColumn = document.createElement('span');
+          problemNumberColumn.className = 'problem-number-column';
+          problemNumberColumn.textContent = `${index + 1}.`; // Hiển thị số thứ tự
+          li.appendChild(problemNumberColumn);
+          // --- KẾT THÚC THÊM CỘT SỐ THỨ TỰ ---
+
+          // --- THAY THẾ CHECKBOX BẰNG DROPDOWN TRẠNG THÁI ---
+          const statusSelect = document.createElement('select');
+          statusSelect.className = 'problem-status-select';
+          statusSelect.dataset.problemUrl = p.url; // Lưu URL để dễ dàng truy cập localStorage
+
+          const statuses = [
+              {value: 'Unsolved', text: 'Chưa giải'},
+              {value: 'AC', text: 'AC'},
+              {value: 'WA', text: 'WA'},
+              {value: 'TLE', text: 'TLE'},
+              {value: 'MLE', text: 'MLE'},
+              {value: 'RE', text: 'RE'},
+              {value: 'CE', text: 'CE'},
+              {value: 'Other', text: 'Khác'}
+          ];
+
+          statuses.forEach(status => {
+              const option = document.createElement('option');
+              option.value = status.value;
+              option.textContent = status.text;
+              statusSelect.appendChild(option);
+          });
+
+          // Lấy trạng thái đã lưu từ localStorage, mặc định là 'Unsolved'
+          const savedStatus = localStorage.getItem(p.url) || 'Unsolved';
+          statusSelect.value = savedStatus; // Đặt giá trị đã chọn cho dropdown
+
+          // Thêm lớp trạng thái vào li ngay khi render
+          li.classList.add('status-' + savedStatus.toLowerCase());
+
+          // Event listener cho dropdown trạng thái
+          statusSelect.addEventListener('change', (event) => {
+              const newStatus = event.target.value;
+              const problemUrl = event.target.dataset.problemUrl;
+              localStorage.setItem(problemUrl, newStatus);
+              
+              // Cập nhật lớp CSS của li
+              li.className = ''; // Xóa tất cả các lớp trạng thái cũ
+              li.classList.add('status-' + newStatus.toLowerCase());
+              
+              // Cập nhật icon
+              const currentIconSpan = document.getElementById(`icon-${p.id}`);
+              if (currentIconSpan) {
+                  currentIconSpan.innerHTML = getIconForStatus(newStatus);
+              }
+
+              updateStats(); // Cập nhật thống kê/biểu đồ
+          });
+
+          li.appendChild(statusSelect); // Thêm dropdown vào li
+          // --- KẾT THÚC THAY THẾ ---
+
+          const problemInfo = document.createElement('div');
+          problemInfo.className = 'problem-info';
+
+          // --- THÊM ICON TRẠNG THÁI VÀO ĐÂY ---
+          const iconSpan = document.createElement('span'); 
+          iconSpan.className = 'problem-status-icon';
+          iconSpan.id = `icon-${p.id}`; // Gán ID để dễ dàng cập nhật
+          iconSpan.innerHTML = getIconForStatus(savedStatus); // Thiết lập icon ban đầu
+          problemInfo.appendChild(iconSpan); 
+          // --- KẾT THÚC THÊM ICON ---
+
+          const a = document.createElement('a');
+          a.href = p.url;
+          a.textContent = p.title; // Chỉ còn tiêu đề, không còn số thứ tự ở đây
+          a.target = '_blank';
+          a.className = 'problem-title';
+
+          const difficultySpan = document.createElement('span');
+          difficultySpan.textContent = `[${p.difficulty}]`;
+          difficultySpan.className = 'problem-difficulty';
+
+          problemInfo.appendChild(a);
+          problemInfo.appendChild(difficultySpan);
+
+          li.appendChild(problemInfo);
+          list.appendChild(li);
+        });
+      }
+
+      // ----------- HÀM CẬP NHẬT THỐNG KÊ/BIỂU ĐỒ MỚI -----------
+      function updateStats() {
+        const selectedDifficulty = currentFilterDifficulty;
+        // Lọc lại danh sách bài toán dựa trên tab hiện tại để tính thống kê
+        const problemsForStats = problems.filter(p => {
+            // --- Logic lọc đã loại bỏ 'All' ---
+            return p.difficulty.toLowerCase() === selectedDifficulty.toLowerCase();
+        });
+
+        // Khởi tạo đối tượng để đếm số lượng từng trạng thái
+        const statusCounts = {
+            'AC': 0,
+            'WA': 0,
+            'TLE': 0,
+            'MLE': 0,
+            'RE': 0,
+            'CE': 0,
+            'Other': 0,
+            'Unsolved': 0
+        };
+
+        problemsForStats.forEach(p => {
+          const status = localStorage.getItem(p.url) || 'Unsolved';
+          // Tăng số đếm cho trạng thái tương ứng
+          if (statusCounts.hasOwnProperty(status)) {
+              statusCounts[status]++;
+          } else {
+              // Xử lý trường hợp trạng thái không nằm trong danh sách (ít khả năng xảy ra nếu dropdown chuẩn)
+              statusCounts['Other']++;
+          }
+        });
+        
+        const totalCount = problemsForStats.length;
+
+        // Chuẩn bị dữ liệu cho Chart.js
+        const chartLabels = [];
+        const chartData = [];
+        const chartColors = [];
+
+        // Định nghĩa màu sắc cho từng trạng thái
+        const statusColors = {
+            'AC': '#4CAF50',    // Xanh lá cây
+            'WA': '#FF6384',    // Đỏ nhạt
+            'TLE': '#FFCE56',   // Vàng
+            'MLE': '#36A2EB',   // Xanh dương
+            'RE': '#FF9F40',    // Cam
+            'CE': '#9966FF',    // Tím
+            'Other': '#C9CBCF', // Xám nhạt
+            'Unsolved': '#6C757D' // Xám đậm (cho chưa giải)
+        };
+
+        // Lọc ra các trạng thái có số lượng > 0 để chỉ hiển thị những trạng thái thực sự có bài
+        for (const status in statusCounts) {
+            if (statusCounts[status] > 0) {
+                chartLabels.push(`${status} (${statusCounts[status]})`); // Ví dụ: AC (10)
+                chartData.push(statusCounts[status]);
+                chartColors.push(statusColors[status]);
+            }
+        }
+
+        const ctx = document.getElementById('solvedPieChart');
+        if (!ctx) {
+            console.error("Không tìm thấy phần tử canvas với id 'solvedPieChart'.");
+            return;
+        }
+
+        // Nếu biểu đồ đã tồn tại, hủy bỏ nó trước khi tạo mới
+        if (myPieChart) {
+          myPieChart.destroy();
+        }
+
+        myPieChart = new Chart(ctx, {
+          type: 'pie',
+          data: {
+            labels: chartLabels,
+            datasets: [{
+              data: chartData,
+              backgroundColor: chartColors,
+              hoverOffset: 4
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              legend: {
+                position: 'top',
+              },
+              title: {
+                display: true,
+                text: `Thống kê trạng thái bài giải (${totalCount} bài)`
+              }
+            }
+          }
+        });
+      }
+
+      // Gọi render và updateStats lần đầu khi dữ liệu đã tải xong
+      render();
+      updateStats(); // Gọi hàm cập nhật thống kê ban đầu
+    }
+
+    loadProblems();
+  </script>
+</body>
+</html>

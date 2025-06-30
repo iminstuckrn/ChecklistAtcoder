@@ -1,0 +1,502 @@
+[
+  {
+    "url": "https://atcoder.jp/contests/abc065/tasks/abc065_b",
+    "difficulty": "Medium",
+    "name": "B. Trained?"
+  },
+  {
+    "url": "https://atcoder.jp/contests/agc029/tasks/agc029_a",
+    "difficulty": "Medium",
+    "name": "A. Irreversible operation"
+  },
+  {
+    "url": "https://atcoder.jp/contests/agc040/tasks/agc040_a",
+    "difficulty": "Medium",
+    "name": "A. ><"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc066/tasks/abc066_b",
+    "difficulty": "Medium",
+    "name": "B. ss"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc139/tasks/abc139_d",
+    "difficulty": "Medium",
+    "name": "D. ModSum"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc075/tasks/abc075_b",
+    "difficulty": "Medium",
+    "name": "B. Minesweeper"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc098/tasks/abc098_b",
+    "difficulty": "Medium",
+    "name": "B. Cut and Count"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc064/tasks/abc064_c",
+    "difficulty": "Medium",
+    "name": "C. Colorful Leaderboard"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc060/tasks/abc060_b",
+    "difficulty": "Medium",
+    "name": "B. Choose Integers"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc072/tasks/arc082_a",
+    "difficulty": "Medium",
+    "name": "C. Together"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc057/tasks/abc057_b",
+    "difficulty": "Medium",
+    "name": "B. Checkpoints"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc107/tasks/abc107_b",
+    "difficulty": "Medium",
+    "name": "B. Grid Compression"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc086/tasks/arc089_a",
+    "difficulty": "Medium",
+    "name": "C. Traveling"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc096/tasks/abc096_c",
+    "difficulty": "Medium",
+    "name": "C. Grid Repainting 2"
+  },
+  {
+    "url": "https://atcoder.jp/contests/keyence2019/tasks/keyence2019_b",
+    "difficulty": "Medium",
+    "name": "B. KEYENCE String"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc063/tasks/arc075_a",
+    "difficulty": "Medium",
+    "name": "C. Bugged"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc060/tasks/arc073_a",
+    "difficulty": "Medium",
+    "name": "C. Sentou"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc088/tasks/abc088_c",
+    "difficulty": "Medium",
+    "name": "C. Takahashi's Information"
+  },
+  {
+    "url": "https://atcoder.jp/contests/diverta2019/tasks/diverta2019_b",
+    "difficulty": "Medium",
+    "name": "B. RGB Boxes"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc073/tasks/abc073_c",
+    "difficulty": "Medium",
+    "name": "C. Write and Erase"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc159/tasks/abc159_d",
+    "difficulty": "Medium",
+    "name": "D. Banned K"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc126/tasks/abc126_c",
+    "difficulty": "Medium",
+    "name": "C. Dice and Coin"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc157/tasks/abc157_c",
+    "difficulty": "Medium",
+    "name": "C. Guess The Number"
+  },
+  {
+    "url": "https://atcoder.jp/contests/agc015/tasks/agc015_a",
+    "difficulty": "Medium",
+    "name": "A. A+...+B Problem"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc081/tasks/arc086_a",
+    "difficulty": "Medium",
+    "name": "C. Not so Diverse"
+  },
+  {
+    "url": "https://atcoder.jp/contests/agc013/tasks/agc013_a",
+    "difficulty": "Medium",
+    "name": "A. Sorted Arrays"
+  },
+  {
+    "url": "https://atcoder.jp/contests/agc006/tasks/agc006_a",
+    "difficulty": "Medium",
+    "name": "A. Prefix and Suffix"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc154/tasks/abc154_d",
+    "difficulty": "Medium",
+    "name": "D. Dice in Line"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc082/tasks/abc082_b",
+    "difficulty": "Medium",
+    "name": "B. Two Anagrams"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc090/tasks/arc091_a",
+    "difficulty": "Medium",
+    "name": "C. Flip,Flip, and Flip......"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc069/tasks/arc080_a",
+    "difficulty": "Medium",
+    "name": "C. 4-adjacent"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc085/tasks/abc085_c",
+    "difficulty": "Medium",
+    "name": "C. Otoshidama"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc043/tasks/abc043_b",
+    "difficulty": "Medium",
+    "name": "B. Unhappy Hacking (ABC Edit)"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc101/tasks/arc099_a",
+    "difficulty": "Medium",
+    "name": "C. Minimization"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc131/tasks/abc131_c",
+    "difficulty": "Medium",
+    "name": "C. Anti-Division"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc109/tasks/abc109_c",
+    "difficulty": "Medium",
+    "name": "C. Skip"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc116/tasks/abc116_c",
+    "difficulty": "Medium",
+    "name": "C. Grand Garden"
+  },
+  {
+    "url": "https://atcoder.jp/contests/code-festival-2017-qualb/tasks/code_festival_2017_qualb_b",
+    "difficulty": "Medium",
+    "name": "B. Problem Set"
+  },
+  {
+    "url": "https://atcoder.jp/contests/yahoo-procon2019-qual/tasks/yahoo_procon2019_qual_c",
+    "difficulty": "Medium",
+    "name": "C. When I hit my pocket..."
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc117/tasks/abc117_c",
+    "difficulty": "Medium",
+    "name": "C. Streamline"
+  },
+  {
+    "url": "https://atcoder.jp/contests/agc016/tasks/agc016_a",
+    "difficulty": "Medium",
+    "name": "A. Shrinking"
+  },
+  {
+    "url": "https://atcoder.jp/contests/agc015/tasks/agc015_b",
+    "difficulty": "Medium",
+    "name": "B. Evilator"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc056/tasks/arc070_a",
+    "difficulty": "Medium",
+    "name": "C. Go Home"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc066/tasks/arc077_a",
+    "difficulty": "Medium",
+    "name": "C. pushpush"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc055/tasks/arc069_a",
+    "difficulty": "Medium",
+    "name": "C. Scc Puzzle"
+  },
+  {
+    "url": "https://atcoder.jp/contests/cf17-final/tasks/cf17_final_b",
+    "difficulty": "Medium",
+    "name": "B. Palindrome-phobia"
+  },
+  {
+    "url": "https://atcoder.jp/contests/agc017/tasks/agc017_a",
+    "difficulty": "Medium",
+    "name": "A. Biscuits"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc130/tasks/abc130_c",
+    "difficulty": "Medium",
+    "name": "C. Rectangle Cutting"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc071/tasks/arc081_a",
+    "difficulty": "Medium",
+    "name": "C. Make a Rectangle"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc133/tasks/abc133_c",
+    "difficulty": "Medium",
+    "name": "C. Remainder Minimization 2019"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc094/tasks/arc095_a",
+    "difficulty": "Medium",
+    "name": "C. Many Medians"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc131/tasks/abc131_d",
+    "difficulty": "Medium",
+    "name": "D. Megalomania"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc092/tasks/arc093_a",
+    "difficulty": "Medium",
+    "name": "C. Traveling Plan"
+  },
+  {
+    "url": "https://atcoder.jp/contests/agc011/tasks/agc011_a",
+    "difficulty": "Medium",
+    "name": "A. Airport Bus"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc068/tasks/arc079_a",
+    "difficulty": "Medium",
+    "name": "C. Cat Snuke and a Voyage"
+  },
+  {
+    "url": "https://atcoder.jp/contests/keyence2020/tasks/keyence2020_c",
+    "difficulty": "Medium",
+    "name": "C. Subarray Sum"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc137/tasks/abc137_c",
+    "difficulty": "Medium",
+    "name": "C. Green Bin"
+  },
+  {
+    "url": "https://atcoder.jp/contests/agc034/tasks/agc034_a",
+    "difficulty": "Medium",
+    "name": "A. Kenken Race"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc072/tasks/arc082_b",
+    "difficulty": "Medium",
+    "name": "D. Derangement"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc089/tasks/abc089_c",
+    "difficulty": "Medium",
+    "name": "C. March"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc158/tasks/abc158_d",
+    "difficulty": "Medium",
+    "name": "D. String Formation"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc118/tasks/abc118_c",
+    "difficulty": "Medium",
+    "name": "C. Monsters Battle Royale"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc047/tasks/abc047_b",
+    "difficulty": "Medium",
+    "name": "B. Snuke's Coloring 2 (ABC Edit)"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc082/tasks/arc087_a",
+    "difficulty": "Medium",
+    "name": "C. Good Sequence"
+  },
+  {
+    "url": "https://atcoder.jp/contests/agc028/tasks/agc028_a",
+    "difficulty": "Medium",
+    "name": "A. Two Abbreviations"
+  },
+  {
+    "url": "https://atcoder.jp/contests/agc009/tasks/agc009_a",
+    "difficulty": "Medium",
+    "name": "A. Multiple Array"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc045/tasks/abc045_b",
+    "difficulty": "Medium",
+    "name": "B. Card Game for Three (ABC Edit)"
+  },
+  {
+    "url": "https://atcoder.jp/contests/agc007/tasks/agc007_a",
+    "difficulty": "Medium",
+    "name": "A. Shik and Stone"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc123/tasks/abc123_c",
+    "difficulty": "Medium",
+    "name": "C. Five Transportations"
+  },
+  {
+    "url": "https://atcoder.jp/contests/agc008/tasks/agc008_a",
+    "difficulty": "Medium",
+    "name": "A. Simple Calculator"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc067/tasks/arc078_a",
+    "difficulty": "Medium",
+    "name": "C. Splitting Pile"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc070/tasks/abc070_c",
+    "difficulty": "Medium",
+    "name": "C. Multiple Clocks"
+  },
+  {
+    "url": "https://atcoder.jp/contests/panasonic2020/tasks/panasonic2020_c",
+    "difficulty": "Medium",
+    "name": "C. Sqrt Inequality"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc058/tasks/arc071_a",
+    "difficulty": "Medium",
+    "name": "C. Dubious Document"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc149/tasks/abc149_d",
+    "difficulty": "Medium",
+    "name": "D. Prediction and Restriction"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc098/tasks/arc098_a",
+    "difficulty": "Medium",
+    "name": "C. Attention"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc078/tasks/arc085_a",
+    "difficulty": "Medium",
+    "name": "C. HSI"
+  },
+  {
+    "url": "https://atcoder.jp/contests/agc039/tasks/agc039_a",
+    "difficulty": "Medium",
+    "name": "A. Connection and Disconnection"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc065/tasks/arc076_a",
+    "difficulty": "Medium",
+    "name": "C. Reconciled?"
+  },
+  {
+    "url": "https://atcoder.jp/contests/agc031/tasks/agc031_a",
+    "difficulty": "Medium",
+    "name": "A. Colorful Subsequence"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc047/tasks/arc063_a",
+    "difficulty": "Medium",
+    "name": "C. 1D Reversi"
+  },
+  {
+    "url": "https://atcoder.jp/contests/arc059/tasks/arc059_a",
+    "difficulty": "Medium",
+    "name": "C. Be Together"
+  },
+  {
+    "url": "https://atcoder.jp/contests/agc032/tasks/agc032_a",
+    "difficulty": "Medium",
+    "name": "A. Limited Insertion"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc143/tasks/abc143_d",
+    "difficulty": "Medium",
+    "name": "D. Triangles"
+  },
+  {
+    "url": "https://atcoder.jp/contests/agc022/tasks/agc022_a",
+    "difficulty": "Medium",
+    "name": "A. Diverse Word"
+  },
+  {
+    "url": "https://atcoder.jp/contests/agc035/tasks/agc035_a",
+    "difficulty": "Medium",
+    "name": "A. XOR Circle"
+  },
+  {
+    "url": "https://atcoder.jp/contests/keyence2019/tasks/keyence2019_c",
+    "difficulty": "Medium",
+    "name": "C. Exam and Wizard"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc053/tasks/arc068_a",
+    "difficulty": "Medium",
+    "name": "C. X: Yet Another Die Game"
+  },
+  {
+    "url": "https://atcoder.jp/contests/agc002/tasks/agc002_b",
+    "difficulty": "Medium",
+    "name": "B. Box and Ball"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc122/tasks/abc122_c",
+    "difficulty": "Medium",
+    "name": "C. GeT AC"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc051/tasks/abc051_b",
+    "difficulty": "Medium",
+    "name": "B. Sum of Three Integers"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc144/tasks/abc144_d",
+    "difficulty": "Medium",
+    "name": "D. Water Bottle"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc128/tasks/abc128_c",
+    "difficulty": "Medium",
+    "name": "C. Switches"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc146/tasks/abc146_c",
+    "difficulty": "Medium",
+    "name": "C. Buy an Integer"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc061/tasks/abc061_c",
+    "difficulty": "Medium",
+    "name": "C. Big Array"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc129/tasks/abc129_c",
+    "difficulty": "Medium",
+    "name": "C. Typical Stairs"
+  },
+  {
+    "url": "https://atcoder.jp/contests/cf16-final/tasks/codefestival_2016_final_b",
+    "difficulty": "Medium",
+    "name": "B. Exactly N points"
+  },
+  {
+    "url": "https://atcoder.jp/contests/caddi2018b/tasks/caddi2018_a",
+    "difficulty": "Medium",
+    "name": "C. Product and GCD"
+  },
+  {
+    "url": "https://atcoder.jp/contests/code-festival-2017-quala/tasks/code_festival_2017_quala_b",
+    "difficulty": "Medium",
+    "name": "B. fLIP"
+  },
+  {
+    "url": "https://atcoder.jp/contests/abc111/tasks/arc103_a",
+    "difficulty": "Medium",
+    "name": "C. /\\/\\/\\"
+  }
+]

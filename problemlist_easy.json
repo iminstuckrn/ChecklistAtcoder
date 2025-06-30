@@ -1,0 +1,502 @@
+[
+  {
+    "title": "B. Power Socket",
+    "url": "https://atcoder.jp/contests/abc139/tasks/abc139_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Rally",
+    "url": "https://atcoder.jp/contests/abc156/tasks/abc156_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Qualification simulator",
+    "url": "https://atcoder.jp/contests/code-festival-2016-qualb/tasks/codefestival_2016_qualB_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Tax Rate",
+    "url": "https://atcoder.jp/contests/sumitrust2019/tasks/sumitb2019_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Can you solve this?",
+    "url": "https://atcoder.jp/contests/abc121/tasks/abc121_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Bishop",
+    "url": "https://atcoder.jp/contests/panasonic2020/tasks/panasonic2020_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Bingo",
+    "url": "https://atcoder.jp/contests/abc157/tasks/abc157_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. 1 21",
+    "url": "https://atcoder.jp/contests/abc086/tasks/abc086_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Collecting Balls (Easy Version)",
+    "url": "https://atcoder.jp/contests/abc074/tasks/abc074_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Card Game for Two",
+    "url": "https://atcoder.jp/contests/abc088/tasks/abc088_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Break Number",
+    "url": "https://atcoder.jp/contests/abc068/tasks/abc068_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Traveling Salesman around Lake",
+    "url": "https://atcoder.jp/contests/abc160/tasks/abc160_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "A. Cookie Exchanges",
+    "url": "https://atcoder.jp/contests/agc014/tasks/agc014_a",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Replacing Integer",
+    "url": "https://atcoder.jp/contests/abc161/tasks/abc161_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Divide the Problems",
+    "url": "https://atcoder.jp/contests/abc132/tasks/abc132_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Go to School",
+    "url": "https://atcoder.jp/contests/abc142/tasks/abc142_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Alchemist",
+    "url": "https://atcoder.jp/contests/abc138/tasks/abc138_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. ATCoder",
+    "url": "https://atcoder.jp/contests/abc122/tasks/abc122_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Toll Gates",
+    "url": "https://atcoder.jp/contests/abc094/tasks/abc094_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Collatz Problem",
+    "url": "https://atcoder.jp/contests/abc116/tasks/abc116_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Next Prime",
+    "url": "https://atcoder.jp/contests/abc149/tasks/abc149_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "A. Candy Distribution Again",
+    "url": "https://atcoder.jp/contests/agc027/tasks/agc027_a",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Chocolate",
+    "url": "https://atcoder.jp/contests/abc092/tasks/abc092_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Nice Shopping",
+    "url": "https://atcoder.jp/contests/hitachi2020/tasks/hitachi2020_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Count Order",
+    "url": "https://atcoder.jp/contests/abc150/tasks/abc150_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "D. Caracal vs Monster",
+    "url": "https://atcoder.jp/contests/abc153/tasks/abc153_d",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Count Balls",
+    "url": "https://atcoder.jp/contests/abc158/tasks/abc158_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Shift only",
+    "url": "https://atcoder.jp/contests/abc081/tasks/abc081_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. 754",
+    "url": "https://atcoder.jp/contests/abc114/tasks/abc114_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Ruined Square",
+    "url": "https://atcoder.jp/contests/abc108/tasks/abc108_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Varied",
+    "url": "https://atcoder.jp/contests/abc063/tasks/abc063_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Increment Decrement",
+    "url": "https://atcoder.jp/contests/abc052/tasks/abc052_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Postal Code",
+    "url": "https://atcoder.jp/contests/abc084/tasks/abc084_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Coins",
+    "url": "https://atcoder.jp/contests/abc087/tasks/abc087_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Not Found",
+    "url": "https://atcoder.jp/contests/abc071/tasks/abc071_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Prison",
+    "url": "https://atcoder.jp/contests/abc127/tasks/abc127_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Attack Survival",
+    "url": "https://atcoder.jp/contests/abc141/tasks/abc141_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Five Dishes",
+    "url": "https://atcoder.jp/contests/abc123/tasks/abc123_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Exception Handling",
+    "url": "https://atcoder.jp/contests/abc134/tasks/abc134_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "A. Range Product",
+    "url": "https://atcoder.jp/contests/agc002/tasks/agc002_a",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Low Elements",
+    "url": "https://atcoder.jp/contests/abc152/tasks/abc152_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Foods Loved by Everyone",
+    "url": "https://atcoder.jp/contests/abc118/tasks/abc118_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Beautiful Strings",
+    "url": "https://atcoder.jp/contests/abc044/tasks/abc044_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Coloring Colorfully",
+    "url": "https://atcoder.jp/contests/abc124/tasks/abc124_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Palindromic Numbers",
+    "url": "https://atcoder.jp/contests/abc090/tasks/abc090_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "A. Fairness",
+    "url": "https://atcoder.jp/contests/agc024/tasks/agc024_a",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Lucas Number",
+    "url": "https://atcoder.jp/contests/abc079/tasks/abc079_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Lower",
+    "url": "https://atcoder.jp/contests/abc139/tasks/abc139_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Picture Frame",
+    "url": "https://atcoder.jp/contests/abc062/tasks/abc062_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Comparison",
+    "url": "https://atcoder.jp/contests/abc059/tasks/abc059_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Some Sums",
+    "url": "https://atcoder.jp/contests/abc083/tasks/abc083_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Maximal Value",
+    "url": "https://atcoder.jp/contests/abc140/tasks/abc140_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Counting Roads",
+    "url": "https://atcoder.jp/contests/abc061/tasks/abc061_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Shiritori",
+    "url": "https://atcoder.jp/contests/abc109/tasks/abc109_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Good Distance",
+    "url": "https://atcoder.jp/contests/abc133/tasks/abc133_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Small and Large Integers",
+    "url": "https://atcoder.jp/contests/abc093/tasks/abc093_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Tax Increase",
+    "url": "https://atcoder.jp/contests/abc158/tasks/abc158_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Palace",
+    "url": "https://atcoder.jp/contests/abc113/tasks/abc113_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. AcCepted",
+    "url": "https://atcoder.jp/contests/abc104/tasks/abc104_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Contest with Drinks Easy",
+    "url": "https://atcoder.jp/contests/abc050/tasks/abc050_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. String Rotation",
+    "url": "https://atcoder.jp/contests/abc103/tasks/abc103_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Thin",
+    "url": "https://atcoder.jp/contests/abc049/tasks/abc049_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "D. Brick Break",
+    "url": "https://atcoder.jp/contests/abc148/tasks/abc148_d",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. ∵∴∵",
+    "url": "https://atcoder.jp/contests/abc058/tasks/abc058_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. A to Z String",
+    "url": "https://atcoder.jp/contests/abc053/tasks/abc053_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "A. Wanna go back home",
+    "url": "https://atcoder.jp/contests/agc003/tasks/agc003_a",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Poll",
+    "url": "https://atcoder.jp/contests/abc155/tasks/abc155_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Guidebook",
+    "url": "https://atcoder.jp/contests/abc128/tasks/abc128_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "A. Dividing a String",
+    "url": "https://atcoder.jp/contests/agc037/tasks/agc037_a",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. 100 to 105",
+    "url": "https://atcoder.jp/contests/sumitrust2019/tasks/sumitb2019_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Iroha Loves Strings (ABC Edition)",
+    "url": "https://atcoder.jp/contests/abc042/tasks/abc042_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Exponential",
+    "url": "https://atcoder.jp/contests/abc097/tasks/abc097_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "A. Digit Sum 2",
+    "url": "https://atcoder.jp/contests/agc021/tasks/agc021_a",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Half and Half",
+    "url": "https://atcoder.jp/contests/abc095/tasks/arc096_a",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Christmas Eve",
+    "url": "https://atcoder.jp/contests/abc115/tasks/abc115_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Welcome to AtCoder",
+    "url": "https://atcoder.jp/contests/abc151/tasks/abc151_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "A. AtCoder Group Contest",
+    "url": "https://atcoder.jp/contests/agc012/tasks/agc012_a",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Build Stairs",
+    "url": "https://atcoder.jp/contests/abc136/tasks/abc136_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "A. Table Tennis Training",
+    "url": "https://atcoder.jp/contests/agc041/tasks/agc041_a",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Walk on Multiplication Table",
+    "url": "https://atcoder.jp/contests/abc144/tasks/abc144_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. *3 or /2",
+    "url": "https://atcoder.jp/contests/abc100/tasks/abc100_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "A. Ice Tea Store",
+    "url": "https://atcoder.jp/contests/agc019/tasks/agc019_a",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Candies",
+    "url": "https://atcoder.jp/contests/abc087/tasks/arc090_a",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. City Savers",
+    "url": "https://atcoder.jp/contests/abc135/tasks/abc135_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Ringo's Favorite Numbers",
+    "url": "https://atcoder.jp/contests/abc100/tasks/abc100_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. To Infinity",
+    "url": "https://atcoder.jp/contests/abc106/tasks/abc106_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Modulo Summation",
+    "url": "https://atcoder.jp/contests/abc103/tasks/abc103_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Two Colors Card Game",
+    "url": "https://atcoder.jp/contests/abc091/tasks/abc091_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Multiple Gift",
+    "url": "https://atcoder.jp/contests/abc083/tasks/arc088_a",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Training Camp",
+    "url": "https://atcoder.jp/contests/abc055/tasks/abc055_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Average Length",
+    "url": "https://atcoder.jp/contests/abc145/tasks/abc145_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Unification",
+    "url": "https://atcoder.jp/contests/abc120/tasks/abc120_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Iron Bar Cutting",
+    "url": "https://atcoder.jp/contests/ddcc2020-qual/tasks/ddcc2020_qual_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Train Ticket",
+    "url": "https://atcoder.jp/contests/abc079/tasks/abc079_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Same Integers",
+    "url": "https://atcoder.jp/contests/abc093/tasks/arc094_a",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Similar Arrays",
+    "url": "https://atcoder.jp/contests/code-festival-2017-qualc/tasks/code_festival_2017_qualc_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "C. Energy Drink Collector",
+    "url": "https://atcoder.jp/contests/abc121/tasks/abc121_c",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "A. Divide a Cuboid",
+    "url": "https://atcoder.jp/contests/agc004/tasks/agc004_a",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Painting Balls with AtCoDeer",
+    "url": "https://atcoder.jp/contests/abc046/tasks/abc046_b",
+    "difficulty": "Easy"
+  },
+  {
+    "title": "B. Friendly Rabbits",
+    "url": "https://atcoder.jp/contests/code-festival-2016-quala/tasks/codefestival_2016_qualA_b",
+    "difficulty": "Easy"
+  }
+]
