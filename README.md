@@ -1,1 +1,1 @@
-# Just a normal checklist about the Competitive Programming problem at Atcoder!
+# Just a normal checklist of Competitive Programming problems at Atcoder!
